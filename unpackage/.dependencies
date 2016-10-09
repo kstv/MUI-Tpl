@@ -1,0 +1,9 @@
+{
+  "dist/pages/index.html": {
+    "href": "dist/pages/index.html",
+    "resources": [
+      "dist/fonts/mui.ttf"
+    ],
+    "priority": 1
+  }
+}

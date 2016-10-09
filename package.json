@@ -1,0 +1,19 @@
+{
+  "name": "listen",
+  "version": "1.0.1",
+  "description": "初始化",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Loinver/AppTpl.git"
+  },
+  "author": "Linyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Loinver/AppTpl/issues"
+  },
+  "homepage": "https://github.com/Loinver/AppTpl#readme"
+}
