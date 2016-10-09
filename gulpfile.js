@@ -40,11 +40,18 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('./js/define'))
     .pipe(notify("js压缩完成！"));
 });
-// 图片压缩
+//迁移 lib  js
+gulp.task('libjs', function() {
+    gulp.src('./unpackage/Dev/js/lib/*.js')
+      .pipe(uglify())
+      .pipe(gulp.dest('./js/lib'))
+      .pipe(notify("lib js生成成功"));
+  })
+  // 图片压缩
 gulp.task('imagesmin', function() {
-  gulp.src('./unpackage/Dev/images/**/*.{jpg,png,gif,jpeg}')
+  gulp.src('./unpackage/Dev/imgs/**/*.{jpg,png,gif,jpeg}')
     .pipe(imagesmin())
-    .pipe(gulp.dest('./images'))
+    .pipe(gulp.dest('./imgs'))
     .pipe(notify('图片任务完成'));
 });
 //压缩html文件
@@ -59,40 +66,40 @@ gulp.task('htmlmin', function() {
     minifyJS: true, //压缩页面JS
     minifyCSS: true //压缩页面CSS
   };
-  gulp.src('./unpackage/Dev/pages/*.html')
+  gulp.src('./unpackage/Dev/html/*.html')
     .pipe(htmlmin(options))
-    .pipe(gulp.dest('./pages'))
+    .pipe(gulp.dest('./html'))
     .pipe(notify("页面压缩完成"));
 });
 //雪碧图生成
 gulp.task('sprites', function() {
-  gulp.src('./unpackage/Dev/images/icon-' + '*.png')
+  gulp.src('./unpackage/Dev/imgs/icon-' + '*.png')
     .pipe(sprite({
       imgName: 'sprite.png',
       cssName: 'sprite.css',
       cssFormat: 'css',
-      //    cssTemplate: function(data) {
-      //      var arr = [];
-      //      data.sprites.forEach(function(sprite) {
-      //        arr.push("." + sprite.name +
-      //          "{" +
-      //          "background-image: url('../images/" + sprite.escaped_image + "');" +
-      //          "background-position: " + sprite.px.offset_x + " " + sprite.px.offset_y + ";" +
-      //          "width:" + sprite.px.width + ";" +
-      //          "height:" + sprite.px.height + ";" +
-      //          "}\n");
-      //      });
-      //      return arr.join("");
-      //    }
+      cssTemplate: function(data) {
+        var arr = [];
+        data.sprites.forEach(function(sprite) {
+          arr.push("." + sprite.name +
+            "{" +
+            "background-image: url('../imgs/" + sprite.escaped_image + "');" +
+            "background-position: " + sprite.px.offset_x + " " + sprite.px.offset_y + ";" +
+            "width:" + sprite.px.width + ";" +
+            "height:" + sprite.px.height + ";" +
+            "}\n");
+        });
+        return arr.join("");
+      }
     }))
     .pipe(gulp.dest('./css'))
     .pipe(notify("雪碧图生成成功"));
 });
 // 默认任务
 gulp.task('default', function() {
-  gulp.run('jslint', 'sprites', 'cssmin', 'scripts', 'imagesmin', 'htmlmin');
+  gulp.run('jslint', 'sprites', 'cssmin', 'scripts', 'imagesmin', 'htmlmin', 'libjs');
   // 监听文件变化
-  gulp.watch(['./unpackage/Dev/js/*/*.js', './unpackage/Dev/css/*.css', './unpackage/Dev/images/**/*.{png,jpg,jpeg,gif,ico}', './unpackage/Dev/pages/*.html'], function() {
-    gulp.run('jslint', 'sprites', 'cssmin', 'scripts', 'imagesmin', 'htmlmin');
+  gulp.watch(['./unpackage/Dev/js/*/*.js', './unpackage/Dev/css/*.css', './unpackage/Dev/imgs/**/*.{png,jpg,jpeg,gif,ico}', './unpackage/Dev/html/*.html'], function() {
+    gulp.run('jslint', 'sprites', 'cssmin', 'scripts', 'imagesmin', 'htmlmin', 'libjs');
   });
 });

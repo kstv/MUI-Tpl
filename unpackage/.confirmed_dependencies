@@ -1,217 +1,250 @@
 {
-  "index.html": {
-    "resources": [
-      "public/js/mui.min.js",
-      "styles/css/mui.min.css",
-      "pages/main.html",
-      "pages/reg.html",
-      "pages/login.html",
-      "pages/setting.html",
-      "pages/unlock.html",
-      "public/css/mui.min.css",
-      "public/fonts/mui.ttf",
-      "public/js/lib/mui.min.js",
-      "pages/index.html",
-      "dist/css/mui.min.css",
-      "dist/js/lib/mui.min.js",
-      "dist/pages/index.html",
-      "dist/fonts/mui.ttf",
-      "styles/fonts/mui.ttf",
-      "js/lib/mui.min.js",
-      "fonts/mui.ttf",
-      "css/mui.min.css",
-      "unpackage/Dev/pages/index.html"
-    ],
-    "refer": [
-      "pages/main.html",
-      "pages/reg.html",
-      "pages/login.html",
-      "pages/setting.html",
-      "pages/unlock.html",
-      "pages/index.html",
-      "dist/pages/setting.html",
-      "dist/pages/index.html",
-      "unpackage/Dev/pages/setting.html",
-      "unpackage/Dev/pages/index.html",
-      "unpackage/Dev/pages/main.html",
-      "unpackage/111.html"
-    ]
-  },
-  "pages/reg.html": {
-    "resources": [
-      "styles/fonts/mui.ttf",
-      "styles/css/mui.min.css",
-      "styles/css/style.css",
-      "public/js/app.js",
-      "public/js/mui.min.js",
-      "index.html",
-      "public/js/lib/mui.min.js",
-      "public/js/lib/app.js",
-      "public/css/mui.min.css",
-      "public/fonts/mui.ttf",
-      "public/css/feedback-page.css"
-    ],
-    "refer": [
-      "index.html",
-      "pages/login.html"
-    ]
-  },
-  "pages/login.html": {
-    "resources": [
-      "styles/css/style.css",
-      "public/js/mui.enterfocus.js",
-      "public/js/app.js",
-      "public/js/mui.min.js",
-      "styles/css/mui.min.css",
-      "styles/fonts/mui.ttf",
-      "/styles/images/sinaweibo.png",
-      "/styles/images/qq.png",
-      "/styles/images/weixin.png",
-      "public/css/mui.min.css",
-      "public/fonts/mui.ttf",
-      "public/js/lib/mui.min.js"
-    ],
-    "refer": [
-      "pages/main.html",
-      "pages/reg.html",
-      "pages/forget_password.html"
-    ]
-  },
-  "pages/forget_password.html": {
-    "resources": [
-      "styles/css/style.css",
-      "styles/fonts/mui.ttf",
-      "styles/css/mui.min.css",
-      "public/js/app.js",
-      "public/js/mui.min.js"
-    ],
-    "refer": []
-  },
-  "pages/setting.html": {
-    "resources": [
-      "styles/fonts/mui.ttf",
-      "public/js/feedback-page.js",
-      "public/libs/easymob-webim-sdk/strophe-custom-2.0.0.js",
-      "styles/css/feedback-page.css",
-      "public/js/feedback.js",
-      "public/libs/easymob-webim-sdk/jquery-1.11.1.js",
-      "public/libs/easymob-webim-sdk/json2.js",
-      "public/js/mui.locker.js",
-      "public/libs/easymob-webim-sdk/easemob.im-1.0.5.js",
-      "public/js/mui.view.js",
-      "public/js/app.js",
-      "styles/images/iconfont-tianjia.png",
-      "index.html",
-      "public/js/mui.min.js",
-      "styles/css/mui.min.css",
-      "public/css/mui.min.css",
-      "public/css/feedback-page.css",
-      "public/js/lib/mui.min.js",
-      "public/js/lib/mui.locker.js",
-      "public/js/lib/feedback-page.js",
-      "public/js/lib/app.js",
-      "public/js/lib/mui.view.js",
-      "public/js/lib/feedback.js",
-      "public/fonts/mui.ttf",
-      "public/images/iconfont-tianjia.png",
-      "public/js/lib/laytpl.js",
-      "public/js/define/setting.js",
-      "public/js/lib/sea.js",
-      "public/js/lib/jquery-1.11.1.js",
-      "public/js/lib/zepto.min.js",
-      "js/define/setting.js",
-      "js/lib/zepto.min.js",
-      "js/lib/mui.min.js",
-      "css/mui.min.css",
-      "js/lib/sea.js",
-      "fonts/mui.ttf",
-      "css/base.css",
-      "js/lib/laytpl.js"
-    ],
-    "refer": [
-      "index.html",
-      "pages/login.html",
-      "pages/reg.html"
-    ]
-  },
-  "pages/main.html": {
-    "resources": [
-      "public/js/app.js",
-      "public/js/mui.min.js",
-      "styles/css/mui.min.css"
-    ],
-    "refer": [
-      "pages/setting.html"
-    ]
-  },
-  "pages/unlock.html": {
-    "refer": [
-      "pages/main.html",
-      "pages/login.html"
-    ],
-    "resources": []
-  },
-  "pages/index.html": {
-    "resources": [
-      "public/js/lib/mui.min.js",
-      "public/css/mui.min.css",
-      "public/images/1.jpg",
-      "public/images/3.jpg",
-      "public/images/2.jpg",
-      "public/images/4.jpg",
-      "public/images/5.jpg",
-      "pages/pullrefresh_sub.html",
-      "public/fonts/mui.ttf",
-      "public/js/define/setting.js",
-      "public/js/lib/sea.js",
-      "images/2.jpg",
-      "images/5.jpg",
-      "images/1.jpg",
-      "js/lib/sea.js",
-      "images/3.jpg",
-      "images/4.jpg",
-      "fonts/mui.ttf",
-      "js/lib/mui.min.js",
-      "css/mui.min.css",
-      "index.html",
-      "js/define/index.js",
-      "js/define/common.js"
-    ],
-    "refer": [
-      "pages/pullrefresh_sub.html",
-      "index.html"
-    ]
-  },
-  "pages/pullrefresh_sub.html": {
-    "resources": [
-      "public/css/mui.min.css",
-      "public/js/lib/mui.min.js",
-      "public/fonts/mui.ttf"
-    ],
-    "refer": []
-  },
-  "dist/pages/index.html": {
-    "resources": [
-      "dist/css/mui.min.css",
-      "dist/images/4.jpg",
-      "dist/images/1.jpg",
-      "dist/js/lib/sea.js",
-      "dist/images/5.jpg",
-      "dist/images/2.jpg",
-      "dist/images/3.jpg",
-      "dist/js/lib/mui.min.js"
-    ],
-    "refer": []
-  },
-  "dist/pages/setting.html": {
-    "resources": [
-      "dist/js/lib/zepto.min.js",
-      "dist/js/define/setting.js",
-      "dist/css/mui.min.css",
-      "dist/js/lib/sea.js",
-      "dist/js/lib/mui.min.js",
-      "dist/fonts/mui.ttf"
-    ],
-    "refer": []
-  }
+	"index.html": {
+		"resources": [
+			"public/js/mui.min.js",
+			"styles/css/mui.min.css",
+			"pages/main.html",
+			"pages/reg.html",
+			"pages/login.html",
+			"pages/setting.html",
+			"pages/unlock.html",
+			"public/css/mui.min.css",
+			"public/fonts/mui.ttf",
+			"public/js/lib/mui.min.js",
+			"pages/index.html",
+			"dist/css/mui.min.css",
+			"dist/js/lib/mui.min.js",
+			"dist/pages/index.html",
+			"dist/fonts/mui.ttf",
+			"styles/fonts/mui.ttf",
+			"js/lib/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"unpackage/Dev/pages/index.html",
+			"Dist/css/mui.min.css",
+			"Dist/html/index.html",
+			"html/index.html"
+		],
+		"refer": [
+			"pages/main.html",
+			"pages/reg.html",
+			"pages/login.html",
+			"pages/setting.html",
+			"pages/unlock.html",
+			"pages/index.html",
+			"dist/pages/setting.html",
+			"dist/pages/index.html",
+			"unpackage/Dev/pages/setting.html",
+			"unpackage/Dev/pages/index.html",
+			"unpackage/Dev/pages/main.html",
+			"unpackage/111.html",
+			"html/index.html",
+			"html/setting.html"
+		]
+	},
+	"pages/reg.html": {
+		"resources": [
+			"styles/fonts/mui.ttf",
+			"styles/css/mui.min.css",
+			"styles/css/style.css",
+			"public/js/app.js",
+			"public/js/mui.min.js",
+			"index.html",
+			"public/js/lib/mui.min.js",
+			"public/js/lib/app.js",
+			"public/css/mui.min.css",
+			"public/fonts/mui.ttf",
+			"public/css/feedback-page.css"
+		],
+		"refer": [
+			"index.html",
+			"pages/login.html"
+		]
+	},
+	"pages/login.html": {
+		"resources": [
+			"styles/css/style.css",
+			"public/js/mui.enterfocus.js",
+			"public/js/app.js",
+			"public/js/mui.min.js",
+			"styles/css/mui.min.css",
+			"styles/fonts/mui.ttf",
+			"/styles/images/sinaweibo.png",
+			"/styles/images/qq.png",
+			"/styles/images/weixin.png",
+			"public/css/mui.min.css",
+			"public/fonts/mui.ttf",
+			"public/js/lib/mui.min.js"
+		],
+		"refer": [
+			"pages/main.html",
+			"pages/reg.html",
+			"pages/forget_password.html"
+		]
+	},
+	"pages/forget_password.html": {
+		"resources": [
+			"styles/css/style.css",
+			"styles/fonts/mui.ttf",
+			"styles/css/mui.min.css",
+			"public/js/app.js",
+			"public/js/mui.min.js"
+		],
+		"refer": []
+	},
+	"pages/setting.html": {
+		"resources": [
+			"styles/fonts/mui.ttf",
+			"public/js/feedback-page.js",
+			"public/libs/easymob-webim-sdk/strophe-custom-2.0.0.js",
+			"styles/css/feedback-page.css",
+			"public/js/feedback.js",
+			"public/libs/easymob-webim-sdk/jquery-1.11.1.js",
+			"public/libs/easymob-webim-sdk/json2.js",
+			"public/js/mui.locker.js",
+			"public/libs/easymob-webim-sdk/easemob.im-1.0.5.js",
+			"public/js/mui.view.js",
+			"public/js/app.js",
+			"styles/images/iconfont-tianjia.png",
+			"index.html",
+			"public/js/mui.min.js",
+			"styles/css/mui.min.css",
+			"public/css/mui.min.css",
+			"public/css/feedback-page.css",
+			"public/js/lib/mui.min.js",
+			"public/js/lib/mui.locker.js",
+			"public/js/lib/feedback-page.js",
+			"public/js/lib/app.js",
+			"public/js/lib/mui.view.js",
+			"public/js/lib/feedback.js",
+			"public/fonts/mui.ttf",
+			"public/images/iconfont-tianjia.png",
+			"public/js/lib/laytpl.js",
+			"public/js/define/setting.js",
+			"public/js/lib/sea.js",
+			"public/js/lib/jquery-1.11.1.js",
+			"public/js/lib/zepto.min.js",
+			"js/define/setting.js",
+			"js/lib/zepto.min.js",
+			"js/lib/mui.min.js",
+			"css/mui.min.css",
+			"js/lib/sea.js",
+			"fonts/mui.ttf",
+			"css/base.css",
+			"js/lib/laytpl.js"
+		],
+		"refer": [
+			"index.html",
+			"pages/login.html",
+			"pages/reg.html"
+		]
+	},
+	"pages/main.html": {
+		"resources": [
+			"public/js/app.js",
+			"public/js/mui.min.js",
+			"styles/css/mui.min.css"
+		],
+		"refer": [
+			"pages/setting.html"
+		]
+	},
+	"pages/unlock.html": {
+		"refer": [
+			"pages/main.html",
+			"pages/login.html"
+		],
+		"resources": []
+	},
+	"pages/index.html": {
+		"resources": [
+			"public/js/lib/mui.min.js",
+			"public/css/mui.min.css",
+			"public/images/1.jpg",
+			"public/images/3.jpg",
+			"public/images/2.jpg",
+			"public/images/4.jpg",
+			"public/images/5.jpg",
+			"pages/pullrefresh_sub.html",
+			"public/fonts/mui.ttf",
+			"public/js/define/setting.js",
+			"public/js/lib/sea.js",
+			"images/2.jpg",
+			"images/5.jpg",
+			"images/1.jpg",
+			"js/lib/sea.js",
+			"images/3.jpg",
+			"images/4.jpg",
+			"fonts/mui.ttf",
+			"js/lib/mui.min.js",
+			"css/mui.min.css",
+			"index.html",
+			"js/define/index.js",
+			"js/define/common.js"
+		],
+		"refer": [
+			"pages/pullrefresh_sub.html",
+			"index.html"
+		]
+	},
+	"pages/pullrefresh_sub.html": {
+		"resources": [
+			"public/css/mui.min.css",
+			"public/js/lib/mui.min.js",
+			"public/fonts/mui.ttf"
+		],
+		"refer": []
+	},
+	"dist/pages/index.html": {
+		"resources": [
+			"dist/css/mui.min.css",
+			"dist/images/4.jpg",
+			"dist/images/1.jpg",
+			"dist/js/lib/sea.js",
+			"dist/images/5.jpg",
+			"dist/images/2.jpg",
+			"dist/images/3.jpg",
+			"dist/js/lib/mui.min.js"
+		],
+		"refer": []
+	},
+	"dist/pages/setting.html": {
+		"resources": [
+			"dist/js/lib/zepto.min.js",
+			"dist/js/define/setting.js",
+			"dist/css/mui.min.css",
+			"dist/js/lib/sea.js",
+			"dist/js/lib/mui.min.js",
+			"dist/fonts/mui.ttf"
+		],
+		"refer": []
+	},
+	"Dist/html/index.html": {
+		"resources": [
+			"Dist/css/mui.min.css",
+			"Dist/js/lib/sea.js",
+			"Dist/js/lib/mui.min.js",
+			"Dist/js/define/index.js",
+			"Dist/js/define/common.js"
+		]
+	},
+	"html/index.html": {
+		"resources": [
+			"js/define/index.js",
+			"js/lib/sea.js",
+			"js/define/common.js"
+		]
+	},
+	"html/setting.html": {
+		"resources": [
+			"js/define/setting.js",
+			"css/base.css",
+			"js/lib/zepto.min.js",
+			"js/lib/laytpl.js",
+			"js/lib/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/lib/sea.js"
+		]
+	}
 }

@@ -11,13 +11,15 @@
     <script src="../js/lib/mui.min.js"></script>
     <script src="../js/lib/sea.js"></script>
     <style>
-      .mui-control-content {
-        background-color: white;
-        min-height: 215px;
-      }
-      
       .mui-control-content .mui-loading {
         margin-top: 50px;
+      }
+      
+      .mui-tab {
+        z-index: 1;
+        width: 100%;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
       }
     </style>
     <script>
@@ -42,7 +44,7 @@
           <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6"></div>
           <div class="mui-slider-group">
             <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
-              <div id="scroll1" class="mui-scroll-wrapper" >
+              <div id="scroll1" class="mui-scroll-wrapper">
                 <div class="mui-scroll">
                   <ul class="mui-table-view">
                     <li class="mui-table-view-cell">

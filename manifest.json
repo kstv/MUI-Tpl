@@ -92,7 +92,7 @@
       "autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
       "waiting": true,"delay":"0"
     },
-    "runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+    "runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
     "signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
     "distribute": {
       "apple": {
@@ -309,13 +309,17 @@
 					"js/lib/mui.min.js",
 					"fonts/mui.ttf",
 					"css/mui.min.css",
-					"unpackage/Dev/pages/index.html"
+					"unpackage/Dev/pages/index.html",
+					"Dist/css/mui.min.css",
+					"Dist/html/index.html",
+					"html/index.html"
 				],
 				"refer": [
 					"dist/pages/setting.html",
 					"unpackage/Dev/pages/setting.html",
 					"unpackage/Dev/pages/main.html",
-					"unpackage/111.html"
+					"unpackage/111.html",
+					"html/setting.html"
 				],
 				"priority": 0
 			},
@@ -498,6 +502,40 @@
 					"dist/js/lib/sea.js",
 					"dist/js/lib/mui.min.js",
 					"dist/fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"Dist/html/index.html": {
+				"resources": [
+					"Dist/css/mui.min.css",
+					"Dist/js/lib/sea.js",
+					"Dist/js/lib/mui.min.js",
+					"Dist/js/define/index.js",
+					"Dist/js/define/common.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/index.html": {
+				"resources": [
+					"js/define/index.js",
+					"js/lib/sea.js",
+					"js/define/common.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/setting.html": {
+				"resources": [
+					"js/define/setting.js",
+					"css/base.css",
+					"js/lib/zepto.min.js",
+					"js/lib/laytpl.js",
+					"js/lib/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/lib/sea.js"
 				],
 				"refer": [],
 				"priority": 0
