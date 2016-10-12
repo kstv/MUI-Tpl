@@ -3,4 +3,5 @@ define(function(require, exports, module) {
     window.location.reload();
   });
   var common = require('./common');
+  
 });

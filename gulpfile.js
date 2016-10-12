@@ -47,7 +47,7 @@ gulp.task('libjs', function() {
       .pipe(gulp.dest('./js/lib'))
       .pipe(notify("lib js生成成功"));
   })
-  // 图片压缩
+// 图片压缩
 gulp.task('imagesmin', function() {
   gulp.src('./unpackage/Dev/imgs/**/*.{jpg,png,gif,jpeg}')
     .pipe(imagesmin())

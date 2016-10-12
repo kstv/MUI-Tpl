@@ -312,7 +312,15 @@
 					"unpackage/Dev/pages/index.html",
 					"Dist/css/mui.min.css",
 					"Dist/html/index.html",
-					"html/index.html"
+					"html/index.html",
+					"css/sm.css",
+					"css/sm-extend.css",
+					"fonts/ratchicons.woff",
+					"fonts/ratchicons.ttf",
+					"css/sm.min.css",
+					"js/lib/zepto.min.js",
+					"js/define/sm.min.js",
+					"js/define/sm.js"
 				],
 				"refer": [
 					"dist/pages/setting.html",
@@ -521,7 +529,10 @@
 				"resources": [
 					"js/define/index.js",
 					"js/lib/sea.js",
-					"js/define/common.js"
+					"js/define/common.js",
+					"js/lib/mui.min.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf"
 				],
 				"refer": [],
 				"priority": 0
@@ -597,6 +608,7 @@
 		}
 	},
   "unpackage": [
-    "README.md"
-  ]
+	  "README.md",
+	  "gulpfile.js"
+	]
 }
