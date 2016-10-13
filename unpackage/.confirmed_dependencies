@@ -34,7 +34,9 @@
 			"js/define/sm.js",
 			"fonts/iconfont.css",
 			"fonts/iconfont.woff",
-			"css/common.css"
+			"css/common.css",
+			"html/index-main.html",
+			"html/index-2.html"
 		],
 		"refer": [
 			"pages/main.html",
@@ -53,7 +55,8 @@
 			"html/setting.html",
 			"html/index-3.html",
 			"html/index-1.html",
-			"html/index-2.html"
+			"html/index-2.html",
+			"html/index-main.html"
 		]
 	},
 	"pages/reg.html": {
@@ -240,7 +243,8 @@
 			"Dist/js/lib/mui.min.js",
 			"Dist/js/define/index.js",
 			"Dist/js/define/common.js"
-		]
+		],
+		"refer": []
 	},
 	"html/index.html": {
 		"resources": [
@@ -254,7 +258,8 @@
 			"js/lib/zepto.min.js",
 			"js/lib/mui.pullToRefresh.material.js",
 			"js/lib/mui.pullToRefresh.js"
-		]
+		],
+		"refer": []
 	},
 	"html/setting.html": {
 		"resources": [
@@ -266,15 +271,26 @@
 			"fonts/mui.ttf",
 			"css/mui.min.css",
 			"js/lib/sea.js"
-		]
+		],
+		"refer": []
 	},
 	"html/index-1.html": {
 		"resources": [
 			"fonts/iconfont.css",
 			"imgs/user-photo.png",
 			"imgs/icon-listen.png",
-			"css/common.css"
-		]
+			"css/common.css",
+			"js/lib/zepto.min.js",
+			"js/lib/sea.js",
+			"js/lib/mui.min.js",
+			"css/mui.min.css",
+			"js/lib/mui.pullToRefresh.material.js",
+			"js/define/index.js",
+			"js/define/common.js",
+			"js/lib/mui.pullToRefresh.js",
+			"js/define/index-1.js"
+		],
+		"refer": []
 	},
 	"html/index-3.html": {
 		"resources": [
@@ -285,13 +301,56 @@
 			"imgs/icon-status-dhd.png",
 			"imgs/user-bg.jpg",
 			"css/common.css"
-		]
+		],
+		"refer": []
 	},
 	"html/index-2.html": {
 		"resources": [
 			"imgs/user-photo.png",
 			"fonts/iconfont.css",
-			"css/common.css"
+			"css/common.css",
+			"js/define/index-main.js",
+			"js/lib/zepto.min.js",
+			"js/lib/sea.js",
+			"js/define/index-rank.js",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
 		]
+	},
+	"html/index-main.html": {
+		"resources": [
+			"imgs/icon-listen.png",
+			"imgs/user-photo.png",
+			"fonts/iconfont.css",
+			"css/common.css",
+			"js/lib/mui.min.js",
+			"css/mui.min.css",
+			"js/lib/zepto.min.js",
+			"js/lib/sea.js",
+			"js/define/common.js",
+			"html/index-main-content.html",
+			"js/define/index-main.js",
+			"fonts/mui.ttf"
+		],
+		"refer": [
+			"html/index-main-content.html"
+		]
+	},
+	"html/index-main-content.html": {
+		"resources": [
+			"js/define/index-main-content.js",
+			"fonts/mui.ttf",
+			"imgs/icon-listen.png",
+			"imgs/user-photo.png",
+			"css/common.css",
+			"js/lib/mui.min.js",
+			"css/mui.min.css",
+			"js/lib/zepto.min.js",
+			"js/lib/sea.js",
+			"js/define/common.js"
+		],
+		"refer": []
 	}
 }

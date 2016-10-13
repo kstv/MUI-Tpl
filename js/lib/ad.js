@@ -1,0 +1,1 @@
+document.querySelector("body").addEventListener("click",function(e){e.preventDefault(),e.stopPropagation();for(var t=e.target;t&&t!==document;t=t.parentNode){if("A"==t.tagName){plus.runtime.openURL(t.getAttribute("href"));break}console.log("target:"+t.tagName)}},!0);

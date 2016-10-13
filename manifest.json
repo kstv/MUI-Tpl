@@ -323,7 +323,9 @@
 					"js/define/sm.js",
 					"fonts/iconfont.css",
 					"fonts/iconfont.woff",
-					"css/common.css"
+					"css/common.css",
+					"html/index-main.html",
+					"html/index-2.html"
 				],
 				"refer": [
 					"dist/pages/setting.html",
@@ -332,8 +334,7 @@
 					"unpackage/111.html",
 					"html/setting.html",
 					"html/index-3.html",
-					"html/index-1.html",
-					"html/index-2.html"
+					"html/index-1.html"
 				],
 				"priority": 0
 			},
@@ -566,7 +567,16 @@
 					"fonts/iconfont.css",
 					"imgs/user-photo.png",
 					"imgs/icon-listen.png",
-					"css/common.css"
+					"css/common.css",
+					"js/lib/zepto.min.js",
+					"js/lib/sea.js",
+					"js/lib/mui.min.js",
+					"css/mui.min.css",
+					"js/lib/mui.pullToRefresh.material.js",
+					"js/define/index.js",
+					"js/define/common.js",
+					"js/lib/mui.pullToRefresh.js",
+					"js/define/index-1.js"
 				],
 				"refer": [],
 				"priority": 0
@@ -588,7 +598,46 @@
 				"resources": [
 					"imgs/user-photo.png",
 					"fonts/iconfont.css",
-					"css/common.css"
+					"css/common.css",
+					"js/define/index-main.js",
+					"js/lib/zepto.min.js",
+					"js/lib/sea.js",
+					"js/define/index-rank.js",
+					"index.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/index-main.html": {
+				"resources": [
+					"imgs/icon-listen.png",
+					"imgs/user-photo.png",
+					"fonts/iconfont.css",
+					"css/common.css",
+					"js/lib/mui.min.js",
+					"css/mui.min.css",
+					"js/lib/zepto.min.js",
+					"js/lib/sea.js",
+					"js/define/common.js",
+					"html/index-main-content.html",
+					"js/define/index-main.js",
+					"fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/index-main-content.html": {
+				"resources": [
+					"js/define/index-main-content.js",
+					"fonts/mui.ttf",
+					"imgs/icon-listen.png",
+					"imgs/user-photo.png",
+					"css/common.css",
+					"js/lib/mui.min.js",
+					"css/mui.min.css",
+					"js/lib/zepto.min.js",
+					"js/lib/sea.js",
+					"js/define/common.js"
 				],
 				"refer": [],
 				"priority": 0

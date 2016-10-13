@@ -14,7 +14,7 @@
 
   <body>
     <nav class="mui-bar mui-bar-tab">
-      <a class="mui-tab-item mui-active" href="html/index.html">
+      <a class="mui-tab-item mui-active" href="html/index-main.html">
         <span class="mui-icon iconfont icon-home"></span>
         <span class="mui-tab-label">热门</span>
       </a>
@@ -34,8 +34,14 @@
     <script type="text/javascript" src="js/lib/mui.min.js"></script>
     <script type="text/javascript">
       //mui初始化
-      mui.init();
-      var subpages = ['html/index.html', 'html/index-1.html', 'html/index-2.html', 'html/index-3.html'];
+      mui.init({
+        swipeBack: true,
+        statusBarBackground: '#f7f7f7',
+        gestureConfig: {
+          doubletap: true
+        },
+      });
+      var subpages = ['html/index-main.html', 'html/index-1.html', 'html/index-2.html', 'html/index-3.html'];
       var subpage_style = {
         top: '0',
         bottom: '50px'

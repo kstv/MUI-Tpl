@@ -36,12 +36,12 @@ gulp.task('cssmin', function() {
 gulp.task('scripts', function() {
   gulp.src('./unpackage/Dev/js/define/*.js')
     .pipe(seajs())
-    .pipe(uglify({
-      mangle: {
-        except: ['define', 'require', 'module', 'exports', '$']
-      }, //排除混淆关键字
-      compress: true //是否完全压缩
-    }))
+//  .pipe(uglify({
+//    mangle: {
+//      except: ['define', 'require', 'module', 'exports', '$']
+//    }, //排除混淆关键字
+//    compress: true //是否完全压缩
+//  }))
     .pipe(gulp.dest('./js/define'))
     .pipe(notify("js压缩完成！"));
 });
@@ -72,7 +72,7 @@ gulp.task('htmlmin', function() {
     minifyCSS: true //压缩页面CSS
   };
   gulp.src('./unpackage/Dev/html/*.html')
-    .pipe(htmlmin(options))
+    //.pipe(htmlmin(options))
     .pipe(gulp.dest('./html'))
     .pipe(notify("页面压缩完成"));
 });
