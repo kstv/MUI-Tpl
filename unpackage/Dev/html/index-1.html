@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>股答</title>
+    <link rel="stylesheet" href="../css/sm.css">
+    <link rel="stylesheet" href="../css/sm-extend.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../fonts/iconfont.css" />
+  </head>
+
+  <body>
+    <div class="page-group">
+      <div class="page" id="index1">
+        <!--<nav class="bar bar-tab">
+          <a class="tab-item active" href="index-1.html">
+            <span class="icon iconfont icon-remen1"></span>
+            <span class="tab-label">牛之问</span>
+          </a>
+          <a class="tab-item" href="index-2.html">
+            <span class="icon iconfont icon-circledown"></span>
+            <span class="tab-label">大牛榜</span>
+          </a>
+          <a class="tab-item" href="index-3.html">
+            <span class="icon iconfont icon-home"></span>
+            <span class="tab-label">我的牛</span>
+          </a>
+        </nav>-->
+        <nav class="bar bar-tab">
+          <a class="tab-item active" href="index-1.html">
+            牛之问
+          </a>
+          <a class="tab-item" href="index-2.html">
+            大牛榜
+          </a>
+          <a class="tab-item" href="index-3.html">
+            我的牛
+          </a>
+        </nav>
+        <div class="content pull-to-refresh-content infinite-scroll" data-distance="100">
+          <!--下拉刷新组件-->
+          <div class="pull-to-refresh-layer">
+            <div class="preloader"></div>
+            <div class="pull-to-refresh-arrow"></div>
+          </div>
+          <div class="issue-container">
+            <div class="issue-list" data-href="question-to-anwser.html">
+              <ul>
+                <li class="issue-name">
+                  <a href="">今天那只会涨，那只会跌，为什么会涨，为什么会跌，涨了什么时候跌？</a>
+                </li>
+                <li class="user-info"><span class="user-name">牛牛牛1</span><span class="user-tips"><label>骨灰级操盘小王子</label></span></li>
+                <li class="user-issue"><img class="user-photo ve-t" src="../imgs/user-photo.png" alt="头像"><span class="issue-listen ve-t mgl-10"><i class="icon-listen"></i><i class="listen-times">60″</i></span><span class="issue-listen-person-num ve-t fs-12">听过147</span></li>
+              </ul>
+            </div>
+          </div>
+          <!-- 加载提示符 -->
+          <div class="infinite-scroll-preloader">
+            <div class="preloader"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/sm.js"></script>
+    <script type="text/javascript" src="../js/sm-extend.js"></script>
+    <script type="text/javascript" src="../js/sm-city-picker.js"></script>
+    <script type="text/javascript" src="../js/laytpl.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+  </body>
+
+</html>

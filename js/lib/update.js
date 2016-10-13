@@ -1,0 +1,1 @@
+function update(){mui.getJSON(server,{appid:plus.runtime.appid,version:plus.runtime.version,imei:plus.device.imei},function(e){e.status&&plus.nativeUI.confirm(e.note,function(i){0==i.index&&plus.runtime.openURL(e.url)},e.title,["立即更新","取　　消"])})}var server="http://www.dcloud.io/check/update";mui.os.plus&&!mui.os.stream&&mui.plusReady(update);

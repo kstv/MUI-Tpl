@@ -10,7 +10,7 @@ var cssmin = require('../node_modules/gulp-clean-css'); //压缩css
 var notify = require('../node_modules/gulp-notify'); //gulp提示
 var imagesmin = require('../node_modules/gulp-imagemin'); //图片压缩
 var htmlmin = require('../node_modules/gulp-htmlmin'); //压缩html文件
-var sprite = require('../node_modules/gulp.spritesmith'); //雪碧图
+//var sprite = require('../node_modules/gulp.spritesmith'); //雪碧图
 var seajs = require('../node_modules/gulp-seajs-combine');
 //npm install gulp gulp-clean-css gulp-notify gulp-cmd gulp.spritesmith gulp-imagemin gulp-htmlmin gulp-jshint gulp-sass gulp-concat gulp-uglify gulp-rename --save-dev
 // 检查js
@@ -26,6 +26,11 @@ gulp.task('cssmin', function() {
     .pipe(cssmin())
     .pipe(gulp.dest('./css'))
     .pipe(notify("css压缩完成！"));
+  gulp.src('./unpackage/Dev/css/mine/*.css')
+    .pipe(concat('common.css'))
+    .pipe(cssmin())
+    .pipe(gulp.dest('./css'))
+    .pipe(notify("私有css完成！"));
 });
 // 合并，压缩js文件
 gulp.task('scripts', function() {
@@ -47,9 +52,9 @@ gulp.task('libjs', function() {
       .pipe(gulp.dest('./js/lib'))
       .pipe(notify("lib js生成成功"));
   })
-// 图片压缩
+  // 图片压缩
 gulp.task('imagesmin', function() {
-  gulp.src('./unpackage/Dev/imgs/**/*.{jpg,png,gif,jpeg}')
+  gulp.src('./unpackage/Dev/imgs/*.{jpg,png,gif,jpeg}')
     .pipe(imagesmin())
     .pipe(gulp.dest('./imgs'))
     .pipe(notify('图片任务完成'));
@@ -72,34 +77,34 @@ gulp.task('htmlmin', function() {
     .pipe(notify("页面压缩完成"));
 });
 //雪碧图生成
-gulp.task('sprites', function() {
-  gulp.src('./unpackage/Dev/imgs/icon-' + '*.png')
-    .pipe(sprite({
-      imgName: 'sprite.png',
-      cssName: 'sprite.css',
-      cssFormat: 'css',
-      cssTemplate: function(data) {
-        var arr = [];
-        data.sprites.forEach(function(sprite) {
-          arr.push("." + sprite.name +
-            "{" +
-            "background-image: url('../imgs/" + sprite.escaped_image + "');" +
-            "background-position: " + sprite.px.offset_x + " " + sprite.px.offset_y + ";" +
-            "width:" + sprite.px.width + ";" +
-            "height:" + sprite.px.height + ";" +
-            "}\n");
-        });
-        return arr.join("");
-      }
-    }))
-    .pipe(gulp.dest('./css'))
-    .pipe(notify("雪碧图生成成功"));
-});
+//gulp.task('sprites', function() {
+//gulp.src('./unpackage/Dev/imgs/icon-' + '*.png')
+//  .pipe(sprite({
+//    imgName: 'sprite.png',
+//    cssName: 'sprite.css',
+//    cssFormat: 'css',
+//    cssTemplate: function(data) {
+//      var arr = [];
+//      data.sprites.forEach(function(sprite) {
+//        arr.push("." + sprite.name +
+//          "{" +
+//          "background-image: url('../imgs/" + sprite.escaped_image + "');" +
+//          "background-position: " + sprite.px.offset_x + " " + sprite.px.offset_y + ";" +
+//          "width:" + sprite.px.width + ";" +
+//          "height:" + sprite.px.height + ";" +
+//          "}\n");
+//      });
+//      return arr.join("");
+//    }
+//  }))
+//  .pipe(gulp.dest('./css'))
+//  .pipe(notify("雪碧图生成成功"));
+//});
 // 默认任务
 gulp.task('default', function() {
-  gulp.run('jslint', 'sprites', 'cssmin', 'scripts', 'imagesmin', 'htmlmin', 'libjs');
+  gulp.run('jslint', 'cssmin', 'scripts', 'imagesmin', 'htmlmin', 'libjs');
   // 监听文件变化
-  gulp.watch(['./unpackage/Dev/js/*/*.js', './unpackage/Dev/css/*.css', './unpackage/Dev/imgs/**/*.{png,jpg,jpeg,gif,ico}', './unpackage/Dev/html/*.html'], function() {
-    gulp.run('jslint', 'sprites', 'cssmin', 'scripts', 'imagesmin', 'htmlmin', 'libjs');
+  gulp.watch(['./unpackage/Dev/js/*/*.js', './unpackage/Dev/css/*/**.css', './unpackage/Dev/imgs/*.{png,jpg,jpeg,gif,ico}', './unpackage/Dev/html/*.html'], function() {
+    gulp.run('jslint', 'cssmin', 'scripts', 'imagesmin', 'htmlmin', 'libjs');
   });
 });

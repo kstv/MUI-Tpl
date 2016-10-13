@@ -320,14 +320,20 @@
 					"css/sm.min.css",
 					"js/lib/zepto.min.js",
 					"js/define/sm.min.js",
-					"js/define/sm.js"
+					"js/define/sm.js",
+					"fonts/iconfont.css",
+					"fonts/iconfont.woff",
+					"css/common.css"
 				],
 				"refer": [
 					"dist/pages/setting.html",
 					"unpackage/Dev/pages/setting.html",
 					"unpackage/Dev/pages/main.html",
 					"unpackage/111.html",
-					"html/setting.html"
+					"html/setting.html",
+					"html/index-3.html",
+					"html/index-1.html",
+					"html/index-2.html"
 				],
 				"priority": 0
 			},
@@ -532,7 +538,11 @@
 					"js/define/common.js",
 					"js/lib/mui.min.js",
 					"css/mui.min.css",
-					"fonts/mui.ttf"
+					"fonts/mui.ttf",
+					"css/common.css",
+					"js/lib/zepto.min.js",
+					"js/lib/mui.pullToRefresh.material.js",
+					"js/lib/mui.pullToRefresh.js"
 				],
 				"refer": [],
 				"priority": 0
@@ -547,6 +557,38 @@
 					"fonts/mui.ttf",
 					"css/mui.min.css",
 					"js/lib/sea.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/index-1.html": {
+				"resources": [
+					"fonts/iconfont.css",
+					"imgs/user-photo.png",
+					"imgs/icon-listen.png",
+					"css/common.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/index-3.html": {
+				"resources": [
+					"imgs/fly.png",
+					"imgs/user-photo.png",
+					"imgs/icon-listen.png",
+					"fonts/iconfont.css",
+					"imgs/icon-status-dhd.png",
+					"imgs/user-bg.jpg",
+					"css/common.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/index-2.html": {
+				"resources": [
+					"imgs/user-photo.png",
+					"fonts/iconfont.css",
+					"css/common.css"
 				],
 				"refer": [],
 				"priority": 0

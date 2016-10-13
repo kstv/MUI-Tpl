@@ -31,7 +31,10 @@
 			"css/sm.min.css",
 			"js/lib/zepto.min.js",
 			"js/define/sm.min.js",
-			"js/define/sm.js"
+			"js/define/sm.js",
+			"fonts/iconfont.css",
+			"fonts/iconfont.woff",
+			"css/common.css"
 		],
 		"refer": [
 			"pages/main.html",
@@ -47,7 +50,10 @@
 			"unpackage/Dev/pages/main.html",
 			"unpackage/111.html",
 			"html/index.html",
-			"html/setting.html"
+			"html/setting.html",
+			"html/index-3.html",
+			"html/index-1.html",
+			"html/index-2.html"
 		]
 	},
 	"pages/reg.html": {
@@ -243,7 +249,11 @@
 			"js/define/common.js",
 			"js/lib/mui.min.js",
 			"css/mui.min.css",
-			"fonts/mui.ttf"
+			"fonts/mui.ttf",
+			"css/common.css",
+			"js/lib/zepto.min.js",
+			"js/lib/mui.pullToRefresh.material.js",
+			"js/lib/mui.pullToRefresh.js"
 		]
 	},
 	"html/setting.html": {
@@ -256,6 +266,32 @@
 			"fonts/mui.ttf",
 			"css/mui.min.css",
 			"js/lib/sea.js"
+		]
+	},
+	"html/index-1.html": {
+		"resources": [
+			"fonts/iconfont.css",
+			"imgs/user-photo.png",
+			"imgs/icon-listen.png",
+			"css/common.css"
+		]
+	},
+	"html/index-3.html": {
+		"resources": [
+			"imgs/fly.png",
+			"imgs/user-photo.png",
+			"imgs/icon-listen.png",
+			"fonts/iconfont.css",
+			"imgs/icon-status-dhd.png",
+			"imgs/user-bg.jpg",
+			"css/common.css"
+		]
+	},
+	"html/index-2.html": {
+		"resources": [
+			"imgs/user-photo.png",
+			"fonts/iconfont.css",
+			"css/common.css"
 		]
 	}
 }

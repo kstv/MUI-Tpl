@@ -7,33 +7,35 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link href="css/mui.min.css" rel="stylesheet" />
-    <script src="js/lib/mui.min.js"></script>
+    <link rel="stylesheet" href="css/mui.min.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="fonts/iconfont.css" />
   </head>
 
   <body>
     <nav class="mui-bar mui-bar-tab">
       <a class="mui-tab-item mui-active" href="html/index.html">
-        <span class="mui-icon mui-icon-home"></span>
+        <span class="mui-icon iconfont icon-home"></span>
         <span class="mui-tab-label">热门</span>
       </a>
-      <a class="mui-tab-item" href="html/index.html">
-        <span class="mui-icon mui-icon-phone"></span>
+      <a class="mui-tab-item" href="html/index-1.html">
+        <span class="mui-icon iconfont icon-xiaoxi2"></span>
         <span class="mui-tab-label">收听</span>
       </a>
-      <a class="mui-tab-item" href="html/index.html">
-        <span class="mui-icon mui-icon-email"></span>
+      <a class="mui-tab-item" href="html/index-2.html">
+        <span class="mui-icon iconfont icon-bangzhu2"></span>
         <span class="mui-tab-label">找人</span>
       </a>
-      <a class="mui-tab-item" href="html/setting.html">
-        <span class="mui-icon mui-icon-gear"></span>
+      <a class="mui-tab-item" href="html/index-3.html">
+        <span class="mui-icon iconfont icon-yonghu2"></span>
         <span class="mui-tab-label">设置</span>
       </a>
     </nav>
+    <script type="text/javascript" src="js/lib/mui.min.js"></script>
     <script type="text/javascript">
       //mui初始化
       mui.init();
-      var subpages = ['html/index.html', 'html/index.html', 'html/index.html', 'html/setting.html'];
+      var subpages = ['html/index.html', 'html/index-1.html', 'html/index-2.html', 'html/index-3.html'];
       var subpage_style = {
         top: '0',
         bottom: '50px'
