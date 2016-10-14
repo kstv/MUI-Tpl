@@ -36,7 +36,7 @@ define('', [], function (require, exports, module) {
         mui.back = function () {
             if (!first) {
                 first = new Date().getTime();
-                mui.toast('\u518D\u6309\u4E00\u6B21\u9000\u51FA\u7CFB\u7EDF!');
+                mui.toast('\u518D\u6309\u4E00\u6B21\u9000\u51FA');
                 setTimeout(function () {
                     first = null;
                 }, 2000);

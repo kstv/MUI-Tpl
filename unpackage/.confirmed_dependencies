@@ -300,7 +300,15 @@
 			"fonts/iconfont.css",
 			"imgs/icon-status-dhd.png",
 			"imgs/user-bg.jpg",
-			"css/common.css"
+			"css/common.css",
+			"js/define/index-user.js",
+			"js/define/common.js",
+			"js/lib/mui.pullToRefresh.material.js",
+			"js/lib/mui.min.js",
+			"css/mui.min.css",
+			"js/lib/zepto.min.js",
+			"js/lib/sea.js",
+			"js/lib/mui.pullToRefresh.js"
 		],
 		"refer": []
 	},
@@ -313,7 +321,9 @@
 			"js/lib/zepto.min.js",
 			"js/lib/sea.js",
 			"js/define/index-rank.js",
-			"index.html"
+			"index.html",
+			"js/lib/mui.min.js",
+			"css/mui.min.css"
 		],
 		"refer": [
 			"index.html"
@@ -352,5 +362,10 @@
 			"js/define/common.js"
 		],
 		"refer": []
+	},
+	"html/question-detail.html": {
+		"resources": [
+			"html/index-1.html"
+		]
 	}
 }

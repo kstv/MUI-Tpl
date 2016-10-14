@@ -4,8 +4,8 @@
     "iPhone",
     "iPad"
   ],
-  "id": "H589EB5CA",/*应用的标识，创建应用时自动生成，勿手动修改*/
-  "name": "Listen",/*应用名称，程序桌面图标名称*/
+  "id": "H58F8CED0",/*应用的标识，创建应用时自动生成，勿手动修改*/
+  "name": "MUI",/*应用名称，程序桌面图标名称*/
   "version": {
     "name": "1.0.0",/*应用版本名称*/
     "code": "83"
@@ -90,7 +90,7 @@
   "plus": {
     "splashscreen": {
       "autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
-      "waiting": true,"delay":"0"
+      "waiting": true,"delay":"4000"
     },
     "runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
     "signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
@@ -178,14 +178,14 @@
           }
         },
         "android": {
-          "mdpi": "", /*普通屏启动图片，分辨率：240x282*/
-          "ldpi": "", /*大屏启动图片，分辨率：320x442*/
-          "hdpi": "", /*高分屏启动图片，分辨率：480x762*/
-          "xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
-          "xxhdpi": ""
+          "mdpi": "C:/Users/Arthur/Desktop/App/2732.png", /*普通屏启动图片，分辨率：240x282*/
+          "ldpi": "C:/Users/Arthur/Desktop/App/2732.png", /*大屏启动图片，分辨率：320x442*/
+          "hdpi": "C:/Users/Arthur/Desktop/App/2732.png", /*高分屏启动图片，分辨率：480x762*/
+          "xhdpi": "C:/Users/Arthur/Desktop/App/2732.png", /*720P高分屏启动图片，分辨率：720x1242*/
+          "xxhdpi": "C:/Users/Arthur/Desktop/App/2732.png"
         }
       },
-      "debug": true
+      "debug": false
     }
   },
   "dependencies": {
@@ -589,7 +589,15 @@
 					"fonts/iconfont.css",
 					"imgs/icon-status-dhd.png",
 					"imgs/user-bg.jpg",
-					"css/common.css"
+					"css/common.css",
+					"js/define/index-user.js",
+					"js/define/common.js",
+					"js/lib/mui.pullToRefresh.material.js",
+					"js/lib/mui.min.js",
+					"css/mui.min.css",
+					"js/lib/zepto.min.js",
+					"js/lib/sea.js",
+					"js/lib/mui.pullToRefresh.js"
 				],
 				"refer": [],
 				"priority": 0
@@ -603,7 +611,9 @@
 					"js/lib/zepto.min.js",
 					"js/lib/sea.js",
 					"js/define/index-rank.js",
-					"index.html"
+					"index.html",
+					"js/lib/mui.min.js",
+					"css/mui.min.css"
 				],
 				"refer": [],
 				"priority": 0
@@ -638,6 +648,13 @@
 					"js/lib/zepto.min.js",
 					"js/lib/sea.js",
 					"js/define/common.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/question-detail.html": {
+				"resources": [
+					"html/index-1.html"
 				],
 				"refer": [],
 				"priority": 0

@@ -44,7 +44,7 @@ define(function(require, exports, module) {
     mui.back = function() {
       if(!first) {
         first = new Date().getTime();
-        mui.toast('再按一次退出系统!');
+        mui.toast('再按一次退出');
         setTimeout(function() {
           first = null;
         }, 2000);
