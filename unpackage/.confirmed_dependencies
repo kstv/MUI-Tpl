@@ -36,7 +36,10 @@
 			"fonts/iconfont.woff",
 			"css/common.css",
 			"html/index-main.html",
-			"html/index-2.html"
+			"html/index-2.html",
+			"css/weui.css",
+			"js/lib/sea.js",
+			"js/define/index.js"
 		],
 		"refer": [
 			"pages/main.html",
@@ -366,6 +369,27 @@
 	"html/question-detail.html": {
 		"resources": [
 			"html/index-1.html"
+		]
+	},
+	"html/index-nav.html": {
+		"resources": [
+			"js/lib/mui.min.js",
+			"js/lib/zepto.min.js",
+			"js/lib/sea.js",
+			"html/index-main-content.html",
+			"js/define/index.js",
+			"fonts/iconfont.css",
+			"css/common.css",
+			"css/mui.min.css",
+			"fonts/iconfont.woff",
+			"fonts/mui.ttf",
+			"js/define/index-nav.js",
+			"html/index-main.html"
+		],
+		"refer": [
+			"html/index-main-content.html",
+			"html/index-main.html",
+			"html/index-2.html"
 		]
 	}
 }

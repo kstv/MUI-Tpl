@@ -14,7 +14,7 @@
   "icons": {
     "72": "icon.png"
   },
-  "launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+  "launch_path": "html/index-nav.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
   "developer": {
     "name": "",/*开发者名称*/
     "email": "",/*开发者邮箱地址*/
@@ -325,7 +325,10 @@
 					"fonts/iconfont.woff",
 					"css/common.css",
 					"html/index-main.html",
-					"html/index-2.html"
+					"html/index-2.html",
+					"css/weui.css",
+					"js/lib/sea.js",
+					"js/define/index.js"
 				],
 				"refer": [
 					"dist/pages/setting.html",
@@ -657,6 +660,26 @@
 					"html/index-1.html"
 				],
 				"refer": [],
+				"priority": 0
+			},
+			"html/index-nav.html": {
+				"resources": [
+					"js/lib/mui.min.js",
+					"js/lib/zepto.min.js",
+					"js/lib/sea.js",
+					"html/index-main-content.html",
+					"js/define/index.js",
+					"fonts/iconfont.css",
+					"css/common.css",
+					"css/mui.min.css",
+					"fonts/iconfont.woff",
+					"fonts/mui.ttf",
+					"js/define/index-nav.js",
+					"html/index-main.html"
+				],
+				"refer": [
+					"html/index-2.html"
+				],
 				"priority": 0
 			}
 		},
