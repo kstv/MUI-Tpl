@@ -4,6 +4,7 @@ ol,li{list-style: none;}
 .c-fff{color: #ffffff;}
 .c-323{color: #323232;}
 .no-bb{border-bottom: none !important;}
+
 /*
  * 对mui的下拉刷新组件重写
  */
@@ -169,7 +170,7 @@ ol,li{list-style: none;}
 #user-anwser .listen-user-no-fly{width:50%}
 /*问题详情*/
 #question-detail .question-box .question-user{padding: .5rem;}
-#question-detail .question-box .question-user-info{line-height: 2.5rem;}
+#question-detail .question-box .question-user-info{line-height: 2.5rem;overflow: hidden;}
 #question-detail .question-box .user-photo{width: 2rem;height: 2rem;-webkit-border-radius: 50%;border-radius: 50%;vertical-align: middle;}
 #question-detail .question-box .user-name{}
 #question-detail .question-box .question-name{font-size: 16px;line-height: 1.2;padding: .25rem 0;}
@@ -193,16 +194,33 @@ ol,li{list-style: none;}
 #question-detail .anwser-user-other-list{padding: .5rem 0;}
 #question-detail .anwser-no .listen-status-dhd{margin-left: 1rem;}
 #question-detail .anwser-no .anwser-no-box{padding-top: 1rem;color: #d6d7dc;border-top: 1px solid #D6D7DC;margin-top: 1rem;}
+#question-detail .anwser-no-box{line-height: 1.4;}
 /*回答问题页*/
 #question-to-anwser .question-detail{padding: 1rem;}
 #question-to-anwser .question-detail .user-photo{width: 3rem;height: 3rem;display: inline-block;-webkit-border-radius: 50%;border-radius: 50%;}
 #question-to-anwser .question-detail .user-name{}
 #question-to-anwser .question-detail .user-info{line-height: 1.4;}
 #question-to-anwser .question-detail .ques-edit-box{padding: .3rem;width: 100%;min-height: 4rem;-webkit-border-radius: .2rem;border-radius: .2rem;background-color: #f2f4fa;border: 1px solid #d6d7dc;margin-top: .25rem;font-size: 14px;max-width: 100%;}
-#question-to-anwser .question-detail .ques-submit .button{font-size: 16px;background-color: #e64343;height: 2rem;line-height: 2rem;}
-#question-to-anwser .anwser-user-tips{font-weight: 400;padding-left: 1rem;border-bottom: 1px solid #D6D7DC;font-size: 16px;color: #909090;}
+#question-to-anwser .question-detail .ques-submit .button{font-size: 16px;background-color: #e64343;border: 1px solid #E64343;}
+#question-to-anwser .anwser-user-tips{font-weight: 400;padding-left: 1rem;border-bottom: 1px solid #D6D7DC;font-size: 16px;color: #909090;padding-bottom: .5rem;}
 /*优化*/
 @media only screen and (min-width: 100px) and (max-width: 320px) {
-	.anwser-list .listen-box{width: 6rem !important;}
-	#index3-anwser-user .user-info{font-size: 10px}
+  .anwser-list .listen-box{width: 6rem !important;}
+  #index3-anwser-user .user-info{font-size: 10px}
 }
+.talk-warp{width: 100%;margin-top: 1rem;}
+.talk-warp .talk-box{vertical-align: middle;}
+.talk-warp .talk-box .talk-tab{display: inline-block;width: 30%;vertical-align: middle;text-align: center;}
+.talk-warp .talk-box .talk-btn{}
+.talk-warp .talk-box .luying-box{width: 6rem;height: 6rem;-webkit-border-radius: 50%;border-radius: 50%;display: inline-block;}
+.bgc-e64{background: #E64343;}
+.talk-warp .talk-box .luying-box .talk-status{width: 3rem;height: 3rem;display: inline-block;margin: 1.5rem;}
+.talk-warp .talk-box .luying-box .talk-luying{background: url(../imgs/talk-luying.png) center center no-repeat;background-size: contain;}
+.talk-warp .talk-luying-ing{background: url(../imgs/talking.gif) center center no-repeat;background-size: contain;}
+.talk-warp .talk-listen{background: url(../imgs/talk-shiting.png) center center no-repeat;background-size: contain;}
+.talk-warp .talk-listen-ing{background: url(../imgs/listenning.gif) center center no-repeat;background-size: contain;}
+.talk-warp .talk-box .talk-times{color: #E64343;line-height: 6rem;}
+.talk-warp .talk-box .talk-return-btn{width: 3rem;height:3rem;line-height:3rem;border: 1px solid #909090;-webkit-border-radius: 50%;border-radius: 50%;display: inline-block;font-size: 16px;margin: 1.5rem 0;}
+.talk-warp .talk-submit{display: inline-block;padding: .5rem 1rem;background-color: #e64343;color: #fff;font-size: 16px;margin-bottom: 2rem;height: auto;border: none;margin-top: 1rem;-webkit-border-radius: .4rem;border-radius: .4rem;}
+.z-hide{display: none !important;}
+

@@ -15,66 +15,66 @@ var seajs = require('../node_modules/gulp-seajs-combine');
 //npm install gulp gulp-clean-css gulp-notify gulp-cmd gulp.spritesmith gulp-seajs-combine gulp-imagemin gulp-htmlmin gulp-jshint gulp-sass gulp-concat gulp-uglify gulp-rename --save-dev
 // 检查js
 gulp.task('jslint', function() {
-	gulp.src('./unpackage/Dev/js/define/*.js')
-		.pipe(jshint())
-		.pipe(jshint.reporter('default'))
-		.pipe(notify("js检查完成！"));
+  gulp.src('./unpackage/Dev/js/define/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'))
+    .pipe(notify("js检查完成！"));
 });
 // 编译css
 gulp.task('cssmin', function() {
-	gulp.src('./unpackage/Dev/css/*.css')
-		.pipe(cssmin())
-		.pipe(gulp.dest('./css'))
-		.pipe(notify("css压缩完成！"));
-	gulp.src('./unpackage/Dev/css/mine/*.css')
-		.pipe(concat('common.css'))
-		.pipe(cssmin())
-		.pipe(gulp.dest('./css'))
-		.pipe(notify("私有css完成！"));
+  gulp.src('./unpackage/Dev/css/*.css')
+    .pipe(cssmin())
+    .pipe(gulp.dest('./css'))
+    .pipe(notify("css压缩完成！"));
+  gulp.src('./unpackage/Dev/css/mine/*.css')
+    .pipe(concat('common.css'))
+    .pipe(cssmin())
+    .pipe(gulp.dest('./css'))
+    .pipe(notify("私有css完成！"));
 });
 // 合并，压缩js文件
 gulp.task('scripts', function() {
-	gulp.src('./unpackage/Dev/js/define/*.js')
-		.pipe(seajs())
-		//  .pipe(uglify({
-		//    mangle: {
-		//      except: ['define', 'require', 'module', 'exports', '$']
-		//    }, //排除混淆关键字
-		//    compress: true //是否完全压缩
-		//  }))
-		.pipe(gulp.dest('./js/define'))
-		.pipe(notify("js压缩完成！"));
+  gulp.src('./unpackage/Dev/js/define/*.js')
+    .pipe(seajs())
+    .pipe(uglify({
+      mangle: {
+        except: ['define', 'require', 'module', 'exports', '$']
+      }, //排除混淆关键字
+      compress: true //是否完全压缩
+    }))
+    .pipe(gulp.dest('./js/define'))
+    .pipe(notify("js压缩完成！"));
 });
 //迁移 lib  js
 gulp.task('libjs', function() {
-		gulp.src('./unpackage/Dev/js/lib/*.js')
-			.pipe(uglify())
-			.pipe(gulp.dest('./js/lib'))
-			.pipe(notify("lib js生成成功"));
-	})
-	// 图片压缩
+    gulp.src('./unpackage/Dev/js/lib/*.js')
+      .pipe(uglify())
+      .pipe(gulp.dest('./js/lib'))
+      .pipe(notify("lib js生成成功"));
+  })
+  // 图片压缩
 gulp.task('imagesmin', function() {
-	gulp.src('./unpackage/Dev/imgs/*.{jpg,png,gif,jpeg}')
-		.pipe(imagesmin())
-		.pipe(gulp.dest('./imgs'))
-		.pipe(notify('图片任务完成'));
+  gulp.src('./unpackage/Dev/imgs/*.{jpg,png,gif,jpeg}')
+    .pipe(imagesmin())
+    .pipe(gulp.dest('./imgs'))
+    .pipe(notify('图片任务完成'));
 });
 //压缩html文件
 gulp.task('htmlmin', function() {
-	var options = {
-		removeComments: true, //清除HTML注释
-		collapseWhitespace: true, //压缩HTML
-		collapseBooleanAttributes: true, //省略布尔属性的值 <input checked="true"/> ==> <input />
-		removeEmptyAttributes: true, //删除所有空格作属性值 <input id="" /> ==> <input />
-		removeScriptTypeAttributes: true, //删除<script>的type="text/javascript"
-		removeStyleLinkTypeAttributes: true, //删除<style>和<link>的type="text/css"
-		minifyJS: true, //压缩页面JS
-		minifyCSS: true //压缩页面CSS
-	};
-	gulp.src('./unpackage/Dev/html/*.html')
-		//.pipe(htmlmin(options))
-		.pipe(gulp.dest('./html'))
-		.pipe(notify("页面压缩完成"));
+  var options = {
+    removeComments: true, //清除HTML注释
+    collapseWhitespace: true, //压缩HTML
+    collapseBooleanAttributes: true, //省略布尔属性的值 <input checked="true"/> ==> <input />
+    removeEmptyAttributes: true, //删除所有空格作属性值 <input id="" /> ==> <input />
+    removeScriptTypeAttributes: true, //删除<script>的type="text/javascript"
+    removeStyleLinkTypeAttributes: true, //删除<style>和<link>的type="text/css"
+    minifyJS: true, //压缩页面JS
+    minifyCSS: true //压缩页面CSS
+  };
+  gulp.src('./unpackage/Dev/html/*.html')
+    //.pipe(htmlmin(options))
+    .pipe(gulp.dest('./html'))
+    .pipe(notify("页面压缩完成"));
 });
 //雪碧图生成
 //gulp.task('sprites', function() {
@@ -102,9 +102,9 @@ gulp.task('htmlmin', function() {
 //});
 // 默认任务
 gulp.task('default', function() {
-	gulp.run('jslint', 'cssmin', 'scripts', 'imagesmin', 'htmlmin', 'libjs');
-	// 监听文件变化
-	gulp.watch(['./unpackage/Dev/js/**/*.js', './unpackage/Dev/css/**/*.css', './unpackage/Dev/imgs/*.{png,jpg,jpeg,gif,ico}', './unpackage/Dev/html/*.html'], function() {
-		gulp.run('jslint', 'cssmin', 'scripts', 'imagesmin', 'htmlmin', 'libjs');
-	});
+  gulp.run('jslint', 'cssmin', 'scripts', 'imagesmin', 'htmlmin', 'libjs');
+  // 监听文件变化
+  gulp.watch(['./unpackage/Dev/js/**/*.js', './unpackage/Dev/css/**/*.css', './unpackage/Dev/imgs/*.{png,jpg,jpeg,gif,ico}', './unpackage/Dev/html/*.html'], function() {
+    gulp.run('jslint', 'cssmin', 'scripts', 'imagesmin', 'htmlmin', 'libjs');
+  });
 });

@@ -127,6 +127,13 @@
 .dp-tc{display:table-cell}
 .dp-tr{display:table-row}
 .dp-ri{display:run-in}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
 /*flex布局无视float,clear,和vertical-align*/
 .dp-f{display:flex;display: -webkit-flex}
 .dp-if{display:inline-flex}

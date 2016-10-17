@@ -1,0 +1,1 @@
+define("",[],function(require,exports,module){window.addEventListener("reLode",function(){window.location.reload()});document.getElementById("talk-return-btn"),document.getElementById("talk-box");document.getElementsByClassName("luying-box")[0].onclick=function(){}});
