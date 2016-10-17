@@ -17,8 +17,7 @@ define('', [], function (require, exports, module) {
                         callback: function () {
                             var self = this;
                             setTimeout(function () {
-                                var ul = self.element.querySelector('.mui-table-view');
-                                ul.insertBefore(createFragment(ul, index, 10, true), ul.firstChild);
+                                console.log('\u4E0B\u62C9');
                                 self.endPullDownToRefresh();
                             }, 1000);
                         }
@@ -27,26 +26,13 @@ define('', [], function (require, exports, module) {
                         callback: function () {
                             var self = this;
                             setTimeout(function () {
-                                var ul = self.element.querySelector('.mui-table-view');
-                                ul.appendChild(createFragment(ul, index, 5));
+                                console.log('\u4E0A\u62C9');
                                 self.endPullUpToRefresh();
                             }, 1000);
                         }
                     }
                 });
             });
-            var createFragment = function (ul, index, count, reverse) {
-                var length = ul.querySelectorAll('li').length;
-                var fragment = document.createDocumentFragment();
-                var li;
-                for (var i = 0; i < count; i++) {
-                    li = document.createElement('li');
-                    li.className = 'mui-table-view-cell';
-                    li.innerHTML = '\u7B2C' + (index + 1) + '\u4E2A\u9009\u9879\u5361\u5B50\u9879-' + (length + (reverse ? count - i : i + 1));
-                    fragment.appendChild(li);
-                }
-                return fragment;
-            };
         });
     }(mui));
 });

@@ -20,6 +20,7 @@
       body {
         background-color: #efeff4;
       }
+      
       .mui-segmented-control.mui-scroll-wrapper .mui-scroll {
         width: 100%;
       }
@@ -27,10 +28,38 @@
       .mui-segmented-control.mui-scroll-wrapper .mui-control-item {
         width: 33.3333%;
       }
+      
       .mui-slider-group {
         top: 250px !important;
       }
-      .mui-slider-indicator.mui-segmented-control{margin-top: 210px;}
+      
+      .mui-slider-indicator.mui-segmented-control {
+        margin-top: 210px;
+      }
+      
+      .mui-segmented-control.mui-segmented-control-inverted .mui-control-item {
+        color: #fff;
+      }
+      
+      .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+        color: #fff;
+      }
+      
+      .mui-slider {
+        z-index: 8;
+      }
+      
+      .mui-segmented-control .mui-control-item {
+        line-height: 40px;
+      }
+      
+      .mui-segmented-control.mui-scroll-wrapper {
+        height: 40px;
+      }
+      
+      .mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+        border-top: none;
+      }
     </style>
     <script>
       (function() {
@@ -46,225 +75,239 @@
           <li class="user-img"><img src="../imgs/user-photo.png" class="user-photo"></li>
           <li class="user-name fs-20 mgt-10">超级无敌威整天</li>
           <li class="user-tips fs-14">股市小白纵横古诗八十年，从没花过一分钱</li>
+          <li class="user-info fs-12">我是说明我是说明我是说明我是说明我是说明我是说明我是说明我是说明我是说明我是说明我是说明我是说明我是说明我是说明我是说明我是说明我是说明我是说明我是说明我是说明</li>
         </ul>
       </div>
-      <div id="slider" class="mui-slider mui-fullscreen" style="z-index: 8;">
-        <div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+      <div id="slider" class="mui-slider mui-fullscreen">
+        <div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted user-menu">
           <div class="mui-scroll">
-            <a class="mui-control-item mui-active" href="#item1mobile">
-              牛问
-            </a>
-            <a class="mui-control-item" href="#item2mobile">
+            <a class="mui-control-item mui-active" href="#user-anwser">
               牛答
             </a>
-            <a class="mui-control-item" href="#item3mobile">
+            <a class="mui-control-item" href="#user-question">
+              牛问
+            </a>
+            <a class="mui-control-item" href="#user-listen">
               牛听
             </a>
           </div>
         </div>
-        <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
         <div class="mui-slider-group">
-          <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
-            <div id="scroll1" class="mui-scroll-wrapper">
+          <!--
+              作者：honeyliner@163.com
+              时间：2016-10-17
+              描述：牛答
+            -->
+          <div id="user-anwser" class="mui-slider-item mui-control-content mui-active">
+            <div id="slider" class="mui-scroll-wrapper">
               <div class="mui-scroll">
-                <ul class="mui-table-view">
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-1
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-2
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-3
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-4
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-5
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-6
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-7
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-8
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-9
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-10
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-11
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-12
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-13
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-14
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-15
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-16
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-17
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-18
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-19
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第1个选项卡子项-20
-                  </li>
-                </ul>
+                <div class="anwser-list">
+                  <div class="user-info clearfix">
+                    <img class="user-photo" src="../imgs/user-photo.png" alt="用户头像">
+                    <h4 class="ques-name">今天哪只会涨为什么会涨涨了什么时候跌,跌了什么时候跌 了什么时候又涨跌了什么时候又涨跌了什么时候又涨跌了什么时候又涨?</h4>
+                  </div>
+                  <div class="ques-info">
+                    <ul>
+                      <li class="ques-status clearfix"><span class="user-anwser fl"><img class="user-photo" src="../imgs/user-photo.png" alt="用户头像"><span class="listen-box"><i class="icon-listen"></i><i class="listen-times">60″</i></span></span><span class="ques-status-info fr"><span class="ques-times">2016年7月17日</span><span class="ques-listen-nums">听过1477</span></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="anwser-list">
+                  <div class="user-info clearfix">
+                    <img class="user-photo" src="../imgs/user-photo.png" alt="用户头像">
+                    <h4 class="ques-name">今天哪只会涨为什么会涨涨了什么时候跌,跌了什么时候跌 了什么时候又涨跌了什么时候又涨跌了什么时候又涨跌了什么时候又涨?</h4>
+                  </div>
+                  <div class="ques-info">
+                    <ul>
+                      <li class="ques-status clearfix"><span class="user-anwser fl"><img class="user-photo" src="../imgs/user-photo.png" alt="用户头像"><span class="listen-box"><i class="icon-listen"></i><i class="listen-times">60″</i></span></span><span class="ques-status-info fr"><span class="ques-times">2016年7月17日</span><span class="ques-listen-nums">听过1477</span></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="anwser-list">
+                  <div class="user-info clearfix">
+                    <img class="user-photo" src="../imgs/user-photo.png" alt="用户头像">
+                    <h4 class="ques-name">今天哪只会涨为什么会涨涨了什么时候跌,跌了什么时候跌 了什么时候又涨跌了什么时候又涨跌了什么时候又涨跌了什么时候又涨?</h4>
+                  </div>
+                  <div class="ques-info">
+                    <ul>
+                      <li class="ques-status clearfix"><span class="user-anwser fl"><img class="user-photo" src="../imgs/user-photo.png" alt="用户头像"><span class="listen-box"><i class="icon-listen"></i><i class="listen-times">60″</i></span></span><span class="ques-status-info fr"><span class="ques-times">2016年7月17日</span><span class="ques-listen-nums">听过1477</span></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="anwser-list">
+                  <div class="user-info clearfix">
+                    <img class="user-photo" src="../imgs/user-photo.png" alt="用户头像">
+                    <h4 class="ques-name">今天哪只会涨为什么会涨涨了什么时候跌,跌了什么时候跌 了什么时候又涨跌了什么时候又涨跌了什么时候又涨跌了什么时候又涨?</h4>
+                  </div>
+                  <div class="ques-info">
+                    <ul>
+                      <li class="ques-status clearfix"><span class="user-anwser fl"><img class="user-photo" src="../imgs/user-photo.png" alt="用户头像"><span class="listen-box"><i class="icon-listen"></i><i class="listen-times">60″</i></span></span><span class="ques-status-info fr"><span class="ques-times">2016年7月17日</span><span class="ques-listen-nums">听过1477</span></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!--
+                作者：honeyliner@163.com
+                时间：2016-10-12
+                描述：没问过问题
+              -->
+                <div class="user-question-no">
+                  <ul>
+                    <li><img src="../imgs/fly.png" class="listen-user-no-fly" alt="飞"></li>
+                    <li class="fs-16 mgt-10">还没有回答哦,快去开启你的股神之路吧~</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div id="item2mobile" class="mui-slider-item mui-control-content">
+          <!--
+          	作者：honeyliner@163.com
+          	时间：2016-10-17
+          	描述：牛问
+          -->
+          <div id="user-question" class="mui-slider-item mui-control-content">
             <div class="mui-scroll-wrapper">
               <div class="mui-scroll">
-                <ul class="mui-table-view">
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-1
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-2
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-3
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-4
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-5
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-6
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-7
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-8
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-9
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-10
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-11
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-12
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-13
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-14
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-15
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-16
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-17
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-18
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-19
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第2个选项卡子项-20
-                  </li>
-                </ul>
+                <div class="anwser-list">
+                  <div class="user-info clearfix">
+                    <img class="user-photo" src="../imgs/user-photo.png" alt="用户头像">
+                    <h4 class="ques-name">问今天哪只会涨为什么会涨涨了什么时候跌,跌了什么时候跌 了什么时候又涨跌了什么时候又涨跌了什么时候又涨跌了什么时候又涨?</h4>
+                  </div>
+                  <div class="ques-info">
+                    <ul>
+                      <li class="ques-status clearfix"><span class="user-anwser fl"><img class="user-photo" src="../imgs/user-photo.png" alt="用户头像"><span class="listen-box"><i class="icon-listen"></i><i class="listen-times">60″</i></span></span><span class="ques-status-info fr"><span class="ques-times">2016年7月17日</span><span class="ques-listen-nums">听过1477</span></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="anwser-list">
+                  <div class="user-info clearfix">
+                    <img class="user-photo" src="../imgs/user-photo.png" alt="用户头像">
+                    <h4 class="ques-name">今天哪只会涨为什么会涨涨了什么时候跌,跌了什么时候跌 了什么时候又涨跌了什么时候又涨跌了什么时候又涨跌了什么时候又涨?</h4>
+                  </div>
+                  <div class="ques-info">
+                    <ul>
+                      <li class="ques-status clearfix"><span class="user-anwser fl"><img class="user-photo" src="../imgs/user-photo.png" alt="用户头像"><span class="listen-box"><i class="icon-listen"></i><i class="listen-times">60″</i></span></span><span class="ques-status-info fr"><span class="ques-times">2016年7月17日</span><span class="ques-listen-nums">听过1477</span></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="anwser-list">
+                  <div class="user-info clearfix">
+                    <img class="user-photo" src="../imgs/user-photo.png" alt="用户头像">
+                    <h4 class="ques-name">今天哪只会涨为什么会涨涨了什么时候跌,跌了什么时候跌 了什么时候又涨跌了什么时候又涨跌了什么时候又涨跌了什么时候又涨?</h4>
+                  </div>
+                  <div class="ques-info">
+                    <ul>
+                      <li class="ques-status clearfix"><span class="listen-status-dhd"></span><span class="ques-status-info fr"><span class="ques-times">2016年7月17日</span><span class="ques-listen-nums">听过1477</span></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="anwser-list">
+                  <div class="user-info clearfix">
+                    <img class="user-photo" src="../imgs/user-photo.png" alt="用户头像">
+                    <h4 class="ques-name">今天哪只会涨为什么会涨涨了什么时候跌,跌了什么时候跌 了什么时候又涨跌了什么时候又涨跌了什么时候又涨跌了什么时候又涨?</h4>
+                  </div>
+                  <div class="ques-info">
+                    <ul>
+                      <li class="ques-status clearfix"><span class="user-anwser fl"><img class="user-photo" src="../imgs/user-photo.png" alt="用户头像"><span class="listen-box"><i class="icon-listen"></i><i class="listen-times">60″</i></span></span><span class="ques-status-info fr"><span class="ques-times">2016年7月17日</span><span class="ques-listen-nums">听过1477</span></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="anwser-list">
+                  <div class="user-info clearfix">
+                    <img class="user-photo" src="../imgs/user-photo.png" alt="用户头像">
+                    <h4 class="ques-name">今天哪只会涨为什么会涨涨了什么时候跌,跌了什么时候跌 了什么时候又涨跌了什么时候又涨跌了什么时候又涨跌了什么时候又涨?</h4>
+                  </div>
+                  <div class="ques-info">
+                    <ul>
+                      <li class="ques-status clearfix"><span class="user-anwser fl"><img class="user-photo" src="../imgs/user-photo.png" alt="用户头像"><span class="listen-box"><i class="icon-listen"></i><i class="listen-times">60″</i></span></span><span class="ques-status-info fr"><span class="ques-times">2016年7月17日</span><span class="ques-listen-nums">听过1477</span></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!--
+                作者：honeyliner@163.com
+                时间：2016-10-12
+                描述：没问过问题
+              -->
+                <div class="user-question-no">
+                  <ul>
+                    <li><img src="../imgs/fly.png" class="listen-user-no-fly" alt="飞"></li>
+                    <li class="fs-16 mgt-10">还没有提问哦,快去开启你的股神之路吧~</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div id="item3mobile" class="mui-slider-item mui-control-content">
+          <div id="user-listen" class="mui-slider-item mui-control-content">
             <div class="mui-scroll-wrapper">
+              <div style="padding: 10px 80px;">
+                <div id="segmentedControl" class="mui-segmented-control userlisten-tab">
+                  <a class="mui-control-item mui-active" href="#listen-dynamic">
+                    收听动态
+                  </a>
+                  <a class="mui-control-item" href="#listen-user">
+                    收听的人
+                  </a>
+                </div>
+              </div>
               <div class="mui-scroll">
-                <ul class="mui-table-view">
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-1
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-2
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-3
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-4
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-5
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-6
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-7
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-8
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-9
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-10
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-11
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-12
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-13
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-14
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-15
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-16
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-17
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-18
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-19
-                  </li>
-                  <li class="mui-table-view-cell">
-                    第3个选项卡子项-20
-                  </li>
-                </ul>
+                <div id="listen-dynamic" class="mui-control-content mui-active">
+                  <div class="anwser-list">
+                    <div class="user-info clearfix">
+                      <img class="user-photo" src="../imgs/user-photo.png" alt="用户头像">
+                      <h4 class="ques-name">今天哪只会涨为什么会涨涨了什么时候跌,跌了什么时候跌 了什么时候又涨跌了什么时候又涨跌了什么时候又涨跌了什么时候又涨?</h4>
+                    </div>
+                    <div class="ques-info">
+                      <ul>
+                        <li class="ques-status clearfix"><span class="user-anwser fl"><img class="user-photo" src="../imgs/user-photo.png" alt="用户头像"><span class="listen-box"><i class="icon-listen"></i><i class="listen-times">60″</i></span></span><span class="ques-status-info fr"><span class="ques-times">2016年7月17日</span><span class="ques-listen-nums">听过1477</span></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div id="listen-user" class="mui-control-content">
+                  <!--
+                      作者：honeyliner@163.com
+                      时间：2016-10-12
+                      描述：有收听的人
+                    -->
+                  <div class="listen-user-list" data-href="">
+                    <div class="listen-user-img"><img src="../imgs/user-photo.png" class="user-photo" alt="收听的用户头像"></div>
+                    <div class="listen-user-info">
+                      <ul>
+                        <li class="user-name">牛牛牛</li>
+                        <li class="user-tips">哈撒大花洒接电话就爱上的环境撒谎的接撒谎的接撒谎的就撒回家多撒谎接电话撒娇的撒娇</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="listen-user-list" data-href="">
+                    <div class="listen-user-img"><img src="../imgs/user-photo.png" class="user-photo" alt="收听的用户头像"></div>
+                    <div class="listen-user-info">
+                      <ul>
+                        <li class="user-name">牛牛牛</li>
+                        <li class="user-tips">哈撒大花洒接电话就爱上的环境撒谎的接撒谎的接撒谎的就撒回家多撒谎接电话撒娇的撒娇</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--
+                    作者：honeyliner@163.com
+                    时间：2016-10-12
+                    描述：没有收听的人
+                    -->
+                  <div class="listen-user-no">
+                    <ul>
+                      <li><img src="../imgs/fly.png" class="listen-user-no-fly" alt="飞"></li>
+                      <li class="fs-16 mgt-10">还没有收听哟,快去开启你的股神之路吧~</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
