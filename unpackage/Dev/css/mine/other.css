@@ -187,8 +187,8 @@ ol,li{list-style: none;}
 #question-detail .anwser-yet-box .anwser-times{font-size: 12px;color: #909090;}
 #question-detail .anwser-yet-box .listen-nums{font-size: 12px;margin-left: 5px;margin-right: 10px;color: #909090;}
 #question-detail .anwser-box{border: 1px solid #D6D7DC;background-color: #fafafa;display: table-row;}
-#question-detail .anwser-box .anwser-info{width: 95%;padding: .5rem;}
-#question-detail .anwser-box .anwser-jiantou{text-align: center;display: table-cell;margin-left: 95%;vertical-align: middle;padding: .5rem;}
+#question-detail .anwser-box .anwser-info{padding: .5rem;display: table-cell;}
+#question-detail .anwser-box .anwser-jiantou{text-align: center;display: table-cell;vertical-align: middle;padding: .5rem;width: 5%;}
 #question-detail .anwser-user-tips{padding: .5rem;font-weight: 400;}
 #question-detail .anwser-user-other-anwser{border-top:1px solid #D6D7DC;}
 #question-detail .anwser-user-other-list{padding: .5rem 0;}

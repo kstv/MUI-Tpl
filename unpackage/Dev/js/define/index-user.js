@@ -4,6 +4,9 @@ define(function(require, exports, module) {
   });
   //var common = require('./common');
   mui.init();
+  mui('body').on('tap', 'a', function() {
+      document.location.href = this.href;
+    });
   (function($) {
     //阻尼系数
     var deceleration = mui.os.ios ? 0.003 : 0.0009;
